@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="form.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>form</title>
+</head>
+
+<body>
+    <div class="form-progress" id="form-progress">
+        <div class="style-progress" id="style-progress">
+            <div class="progress">
+                <div class="progress-fill"></div>
+                <span class="progress-text">0%</span>
+            </div>
+        </div>
+        <form id="form" class="style-add-customer">
+            <p class="title">Add customer :</p>
+            <div class="form-control group-add-customer">
+                <input class="input-saerch padding-saerch-add-customer inputAdd" type="text" placeholder="name" id="name-add-customer" />
+                <small class="error" id="name"></small>
+            </div>
+            <div class="form-control group-add-customer">
+                <input class="input-saerch padding-saerch-add-customer inputAdd" type="text" placeholder="number" id="number-add-customer" />
+                <small class="error" id="number"></small>
+            </div>
+            <div class="form-control group-add-customer">
+                <textarea class="input-saerch padding-saerch-add-customer inputAdd" type="text" placeholder="description" id="description-add-customer" rows="1"></textarea>
+                <small class="error" id="description"></small>
+            </div>
+            <div class="form-control group-add-customer">
+                <input class="input-saerch padding-saerch-add-customer inputAdd" type="text" placeholder="rate" id="rate-add-customer" />
+                <small class="error" id="rate"></small>
+            </div>
+            <div class="form-control group-add-customer">
+                <input class="input-saerch padding-saerch-add-customer inputAdd" type="text" placeholder="balance" id="balance-add-customer" />
+                <small class="error" id="balance"></small>
+            </div>
+            <div class="form-control group-add-customer">
+                <input class="input-saerch padding-saerch-add-customer inputAdd" type="text" placeholder="deposit" id="deposit-add-customer" />
+                <small class="error" id="deposit"></small>
+                <img class="checked" src="https://img.icons8.com/fluency/48/000000/checked.png" />
+            </div>
+            <div class="form-control group-add-customer">
+                <select class="active-inactive inputAdd" id="active-inactive">
+                    <option value="status">STATUS</option>
+                    <option value="ACTIVE">ACTIVE</option>
+                    <option value="INACTIVE">INACTIVE</option>
+                </select>
+                <small class="error" id="status"></small>
+            </div>
+            <div class="form-control group-add-customer">
+                <select class="currency inputAdd" id="currency">
+                    <option value="currency">Currency</option>
+                    <option value="EUR">EUR</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
+                <small class="error" id="currency"></small>
+            </div>
+            <div class="button">
+                <input class="submit none" id="Update" type="button" value="Update"></input>
+                <button class="submit" id="submit">Submit</button>
+                <input class="submit none" id="submit2" type="button" value="Submit"></input>
+                <input class="submit none" id="duplicate" type="button" value="duplicate"></input>
+                <input class="submit" id="Exit" name="exit1" type="button" value="Exit"></input>
+                <input class="submit" id="Exit2" name="exit2" type="button" value="Exit"></input>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="form.js"></script>
+
+</html>

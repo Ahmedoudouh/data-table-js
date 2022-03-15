@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="table.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>customers</title>
+</head>
+
+<body class="content" id="content">
+    <header class="header-backgraond">
+        <div>
+            <img class="iconAdd" id="iconAdd" src="images/iconAdd.png" />
+        </div>
+        <div class="group-icon">
+            <div class="groupIcon">
+                <div>
+                    <img class="icon padding" id="combinedSort" src="images/menu.png" />
+                </div>
+                <div class="group-search">
+                    <div class="group-center">
+                        <div>
+                            <div class="search-1">
+                            </div>
+                            <div class="search-2"></div>
+                            <div>
+                            </div>
+                            <div class="search-3"></div>
+                        </div>
+                    </div>
+                    <input class="input-saerch-a padding-saerch" id="search" type="text" placeholder="Search" />
+                </div>
+            </div>
+            <div class="printer-trash">
+                <div>
+                    <img class="icon none" id="iconPrinter" src="images/printer.png" />
+                </div>
+                <div>
+                    <img class="icon none" id="iconTrash" src="images/trash.png" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="background-combined" id="combinedStyle">
+        <p class="sort-by">
+            Sort by name :
+        </p>
+        <div class="group-span">
+            <span class="word" id="undefined">
+                default
+            </span>
+            <span class="word" id="descending">
+                ascending
+             
+            </span>
+            <span class="word" id="ascending">
+                descending
+             
+            </span>
+        </div>
+        <p class="sort-by">
+            Sort by status :
+        </p>
+        <div class="group-span">
+            <span class="word" id="defaultSort">
+                default  
+                <br>
+            </span>
+            <span class="word" id="activeSort">
+                active
+                <br>
+            </span>
+            <span class="word" id="inactiveSort">
+               inactive
+            </span>
+        </div>
+    </div>
+    <table class="myTable">
+        <thead>
+            <tr class="background-table-row-1">
+                <td class="apdding-left td">
+                    <input class="checkbox" id="checkedAll" type="checkbox" />
+                </td>
+                <td class="td">
+                    <div class="group-checkbox">
+                        <div class="group-customer-arrow"><span class="customer" id="name-customer">NAME</span>
+                            <div class="group-arrow">
+                                <div class="arrow-up" id="arrow-up"></div>
+                                <div id="arrow-down" class="arrow-down"></div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="td"><span class="customer">DESCRIPTION</span></td>
+                <td class="td"><span class="customer">RATE</span></td>
+                <td class="td"><span class="customer">BALANCE</span></td>
+                <td class="td"><span class="customer">DEPOSIT</span></td>
+                <td class="td">
+                    <div class="group-customer-arrow">
+                        <span class="customer" id="customer-status">STATUS</span>
+                        <div class="group-arrow">
+                            <div id="arrow-up-status" class="arrow-up"></div>
+                            <div id="arrow-down-status" class="arrow-down focus"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="apdding-right td">
+                    <div class="group-background">
+                        <div class="background-vector"></div>
+                        <div class="background-vector"></div>
+                        <div class="background-vector"></div>
+                    </div>
+                </td>
+            </tr>
+        </thead>
+        <tbody id="mytbody">
+            <!--
+                 <tr id="rows"></tr>
+            -->
+        </tbody>
+    </table>
+    <div class="notice-none" id="notice">
+        <div>
+            <p class="successful" id="successful"> </p>
+        </div>
+        <div>
+            <img class="icon-successful" src="images/check.png" />
+        </div>
+    </div>
+</body>
+
+<footer class="content footer">
+    <div>
+        <p class="active-customers">active customers:
+            <i id="bold" class="bold"></i> /
+            <i id="lengthArray"></i>
+        </p>
+    </div>
+    <div class="group-footer">
+        <div>
+            <span class="style-word">
+                Rows per page:
+                <select id="select" class="style-select">
+                    <option value="5" selected>5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+            </span>
+        </div>
+        <div class="style-grid-gap">
+            <span id="count-page" class="style-word">
+            </span>
+        </div>
+        <div class="group-arrow-3">
+            <a>
+                <i id="arrow-left" class="arrow"></i>
+            </a>
+            <a>
+                <i id="arrow-right" class="arrow-2"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="table.js"></script>
+
+</html>
