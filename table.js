@@ -93,7 +93,7 @@ function creatElement(customer) {
     divpadlockex.innerHTML = '<img class="withe-icon" id="plus" src="images/plus.png"/>';
     divpadlockex.onclick = () => {
         var parametrpluscustomer = `function=plusCustomer&index=${pluscustomer(customers, customer)}`
-        new URL(window.location.replace(`form.html?${parametrpluscustomer}`))
+        new URL(window.location.replace(`index.html?${parametrpluscustomer}`))
     }
     groupIcon.appendChild(divpadlockex);
     //
@@ -219,7 +219,7 @@ function creatElement(customer) {
     divcellCopy.innerHTML = '<img  class="icon" id="iconCopy" src="images/copy.png" />'
     divcellCopy.onclick = () => {
         var parametrx = `function=duplicateCustomer&index=${duplicateCustomrers(customers, customer)}`
-        new URL(window.location.replace(`form.html?${parametrx}`))
+        new URL(window.location.replace(`index.html?${parametrx}`))
     }
     celldelete.appendChild(divcellCopy);
     /*
@@ -248,7 +248,7 @@ function creatElement(customer) {
     divEdit.onclick = () => {
         if (customer.protect === "unlock") {
             var parametr = `function=editCustomer&index=${editCustomers(customers, customer)}`
-            new URL(window.location.replace(`form.html?${parametr}`))
+            new URL(window.location.replace(`index.html?${parametr}`))
         }
     }
     divEdit.id = "editDiv";
@@ -436,7 +436,7 @@ function getFromLocal() {
 };
 let icon = document.getElementById("iconAdd")
 icon.addEventListener("click", () => {
-    new URL(window.location.replace("form.html?function=addCustomr"))
+    new URL(window.location.replace("index.html?function=addCustomr"))
 });
 
 function editCustomers(arrayCustomer, editCustomrObj) {
